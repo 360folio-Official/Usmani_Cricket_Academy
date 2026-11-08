@@ -1,0 +1,17 @@
+# Raw source material from the client (the sites use resized copies)
+/*.pdf
+/*.mp4
+/*.jpg
+/*.jpeg
+/*.png
+/*.zip
+/Info.txt
+/UCA Logo/
+
+# Build output, backups and local tooling
+/dist/
+/versions/
+/.claude/
+
+# Registrations saved by register.php on a live server
+registrations.csv

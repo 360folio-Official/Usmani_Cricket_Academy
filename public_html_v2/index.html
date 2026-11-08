@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Usmani Cricket Academy | Under the Lights</title>
+  <meta name="description" content="Usmani Cricket Academy, Bahria Town Karachi. Three batches at Precinct 2 and Precinct 12, 3:30 to 6:00 pm. Rs. 2,000 registration, then Rs. 8,000 per month. Register now.">
+  <meta name="theme-color" content="#070807">
+  <meta property="og:title" content="Usmani Cricket Academy | Under the Lights">
+  <meta property="og:description" content="Now open in Bahria Town Karachi. Three batches. Six days. Register now.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span></span></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="hdr">
+    <a class="hdr-brand" href="#top">
+      <span class="dot"></span> UCA <em>/ Bahria Town</em>
+    </a>
+    <div class="hdr-live"><span class="pulse"></span> Nets open &middot; 3:30 pm</div>
+    <div class="hdr-right">
+      <a class="hdr-cta" href="#register">Register &#8599;</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+  </header>
+
+  <nav class="menu" id="menu" aria-label="Main">
+    <ol>
+      <li><a href="#manifesto"><small>01</small>The academy</a></li>
+      <li><a href="#board"><small>02</small>Batches</a></li>
+      <li><a href="#week"><small>03</small>The week</a></li>
+      <li><a href="#ticket"><small>04</small>Fees</a></li>
+      <li><a href="#drills"><small>05</small>Training</a></li>
+      <li><a href="#reel"><small>06</small>On film</a></li>
+      <li><a href="#register"><small>07</small>Register</a></li>
+      <li><a href="#contact"><small>08</small>Find us</a></li>
+    </ol>
+    <p class="menu-foot">+92 300 938 2539 &nbsp;&middot;&nbsp; usmanicricketacademy@gmail.com</p>
+  </nav>
+
+  <main id="top">
+
+    <!-- ============ INTRO: scroll-driven stadium ============ -->
+    <section class="intro" id="intro" aria-label="Introduction">
+      <div class="stage">
+        <canvas class="stage-canvas" id="stadium" aria-hidden="true"></canvas>
+
+        <div class="chapter ch-1" data-from="0" data-to="0.2">
+          <p class="kicker">Usmani Cricket Academy &mdash; Bahria Town, Karachi</p>
+          <h1 class="mega">Under the <i>lights.</i></h1>
+          <p class="sub">Now open. Scroll to take guard.</p>
+        </div>
+
+        <div class="chapter ch-2" data-from="0.24" data-to="0.44">
+          <p class="kicker">Chapter 01</p>
+          <h2 class="mega">22 <i>yards.</i></h2>
+          <p class="sub">Where every session starts.</p>
+        </div>
+
+        <div class="chapter ch-3" data-from="0.48" data-to="0.66">
+          <p class="kicker">Chapter 02</p>
+          <h2 class="mega">3 batches.<br><i>6 days.</i></h2>
+          <p class="sub">3:30 to 6:00 pm &middot; Precinct 2 &amp; Precinct 12</p>
+        </div>
+
+        <div class="chapter ch-4" data-from="0.86" data-to="1.2">
+          <h2 class="mega howzat">How<i>zat!</i></h2>
+          <a class="btn-lime" href="#register">Take guard &mdash; register &#8599;</a>
+        </div>
+
+        <div class="over">
+          <span class="over-label">Over</span>
+          <span class="over-num" id="over-num">0.0</span>
+          <span class="over-balls" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        </div>
+        <div class="scroll-hint">Scroll <span>&darr;</span></div>
+      </div>
+    </section>
+
+    <!-- ============ MANIFESTO ============ -->
+    <section class="manifesto" id="manifesto">
+      <p class="label">(01) The academy</p>
+      <p class="manifesto-text" data-words>
+        We built Usmani Cricket Academy for kids who play in the street until the light goes, and for
+        grown-ups who never stopped wanting to. Proper nets. Proper coaching. A ball that comes down
+        twenty-two yards at you three days a week, until you stop flinching and start hitting.
+      </p>
+    </section>
+
+    <!-- ============ SPLIT-FLAP BOARD ============ -->
+    <section class="board-sec" id="board">
+      <div class="sec-head">
+        <p class="label">(02) Batches</p>
+        <h2 class="h2">Now <i>playing.</i></h2>
+      </div>
+      <div class="board" role="table" aria-label="Batches">
+        <div class="board-row board-head" role="row">
+          <span role="columnheader">Ground</span><span role="columnheader">Squad</span><span role="columnheader">Days</span><span role="columnheader">Time</span><span role="columnheader">Status</span>
+        </div>
+        <div class="board-row" role="row">
+          <span role="cell" data-flap="PRECINCT 2">PRECINCT 2</span>
+          <span role="cell" data-flap="ALL AGES">ALL AGES</span>
+          <span role="cell" data-flap="MON TUE WED">MON TUE WED</span>
+          <span role="cell" data-flap="1530-1800">1530-1800</span>
+          <span role="cell" class="ok" data-flap="OPEN">OPEN</span>
+        </div>
+        <div class="board-row" role="row">
+          <span role="cell" data-flap="PRECINCT 12">PRECINCT 12</span>
+          <span role="cell" data-flap="DIAMOND U14">DIAMOND U14</span>
+          <span role="cell" data-flap="THU FRI SAT">THU FRI SAT</span>
+          <span role="cell" data-flap="1530-1800">1530-1800</span>
+          <span role="cell" class="ok" data-flap="OPEN">OPEN</span>
+        </div>
+        <div class="board-row" role="row">
+          <span role="cell" data-flap="PRECINCT 12">PRECINCT 12</span>
+          <span role="cell" data-flap="PLATINUM 14 UP">PLATINUM 14 UP</span>
+          <span role="cell" data-flap="MON TUE WED">MON TUE WED</span>
+          <span role="cell" data-flap="1530-1800">1530-1800</span>
+          <span role="cell" class="ok" data-flap="OPEN">OPEN</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE WEEK ============ -->
+    <section class="week" id="week">
+      <div class="sec-head">
+        <p class="label">(03) The week</p>
+        <h2 class="h2">Six days of <i>nets.</i></h2>
+      </div>
+      <div class="week-grid">
+        <div class="day"><b>Mon</b><span class="slot s-p2">P2 &middot; All ages</span><span class="slot s-p12s">Platinum &middot; 14+</span></div>
+        <div class="day"><b>Tue</b><span class="slot s-p2">P2 &middot; All ages</span><span class="slot s-p12s">Platinum &middot; 14+</span></div>
+        <div class="day"><b>Wed</b><span class="slot s-p2">P2 &middot; All ages</span><span class="slot s-p12s">Platinum &middot; 14+</span></div>
+        <div class="day"><b>Thu</b><span class="slot s-p12j">Diamond &middot; U14</span></div>
+        <div class="day"><b>Fri</b><span class="slot s-p12j">Diamond &middot; U14</span></div>
+        <div class="day"><b>Sat</b><span class="slot s-p12j">Diamond &middot; U14</span></div>
+      </div>
+      <p class="week-foot">Every session: <b>3:30 pm &rarr; 6:00 pm</b>. Mon to Wed: Precinct 2 at the Sports Complex (Dolphin) and Platinum at Precinct 12. Thu to Sat: Diamond at Precinct 12.</p>
+    </section>
+
+    <!-- ============ TICKET ============ -->
+    <section class="ticket-sec" id="ticket">
+      <div class="sec-head">
+        <p class="label">(04) Fees</p>
+        <h2 class="h2">One ticket. <i>Every batch.</i></h2>
+      </div>
+      <div class="ticket-wrap">
+        <article class="ticket" id="ticket-card">
+          <div class="ticket-main">
+            <p class="t-small">Usmani Cricket Academy &middot; Season pass</p>
+            <p class="t-admit">Admit one player</p>
+            <p class="t-price"><small>Rs.</small>8,000<span>/ month</span></p>
+            <p class="t-reg">+ Rs. 2,000 registration &middot; paid once when you join</p>
+            <dl class="t-meta">
+              <div><dt>Sessions</dt><dd>3 / week</dd></div>
+              <div><dt>Length</dt><dd>2h 30m</dd></div>
+              <div><dt>Grounds</dt><dd>P2 &middot; P12</dd></div>
+            </dl>
+          </div>
+          <div class="ticket-stub">
+            <span class="stub-no">No. 0001</span>
+            <a href="#register" class="stub-cta">Claim &#8599;</a>
+            <span class="barcode" aria-hidden="true"></span>
+          </div>
+        </article>
+      </div>
+
+      <!-- payment: UBL / Raast QR -->
+      <div class="gate" id="pay">
+        <div class="gate-scan">
+          <img src="assets/img/payment-qr.jpg" alt="UBL payment QR code for Usmani Cricket Academy, till code 770387204" width="718" height="758" loading="lazy">
+          <span class="scan-line" aria-hidden="true"></span>
+        </div>
+        <div class="gate-text">
+          <p class="label">Pay at the gate</p>
+          <h3>Scan. Pay. <i>Play.</i></h3>
+          <ol class="gate-steps">
+            <li><span>01</span>Open any Pakistani banking or wallet app that supports Raast QR.</li>
+            <li><span>02</span>Scan the code, or pay to till code <b>770387204</b>.</li>
+            <li><span>03</span>Send the receipt and the player's name on <a href="https://wa.me/923009382539" target="_blank" rel="noopener">WhatsApp</a>.</li>
+          </ol>
+          <a class="gate-save" href="assets/img/payment-qr.jpg" download="UCA-payment-QR.jpg">Save QR code &darr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DRILLS ============ -->
+    <section class="drills" id="drills">
+      <div class="sec-head">
+        <p class="label">(05) Training</p>
+        <h2 class="h2">What happens <i>at nets.</i></h2>
+      </div>
+      <ul class="drill-list">
+        <li><span class="d-no">01</span><span class="d-name">Batting</span><span class="d-desc">Footwork, shot selection, playing pace and spin.</span></li>
+        <li><span class="d-no">02</span><span class="d-name">Bowling</span><span class="d-desc">Run-up, action, line and length, variations.</span></li>
+        <li><span class="d-no">03</span><span class="d-name">Fielding</span><span class="d-desc">Catching, ground fielding, throwing at the stumps.</span></li>
+        <li><span class="d-no">04</span><span class="d-name">Fitness</span><span class="d-desc">Speed, agility and strength built for cricket.</span></li>
+        <li><span class="d-no">05</span><span class="d-name">Match play</span><span class="d-desc">Game scenarios so skills hold up under pressure.</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ REEL: video + photos, scrolls sideways ============ -->
+    <section class="reel" id="reel">
+      <div class="reel-stage">
+        <div class="sec-head">
+          <p class="label">(06) On film</p>
+          <h2 class="h2">Real players. <i>Real nets.</i></h2>
+        </div>
+        <div class="reel-track">
+          <figure class="frame f-video">
+            <video src="assets/video/training.mp4" poster="assets/video/training-poster.jpg" muted loop playsinline preload="metadata" aria-label="Training session at the academy ground"></video>
+            <button class="sound" type="button" aria-pressed="false">Sound off</button>
+            <figcaption><span>UCA 01</span>Warm-up laps</figcaption>
+          </figure>
+          <a class="frame f-wide" href="assets/photos/players-squad.jpg"><img src="assets/photos/players-squad.jpg" alt="Academy players lined up in orange UCA kit" loading="lazy"><span class="cap"><span>UCA 02</span>The squad</span></a>
+          <a class="frame f-tall" href="assets/photos/coach-with-player.jpg"><img src="assets/photos/coach-with-player.jpg" alt="Coach presenting a ball to a young batter under the lights" loading="lazy"><span class="cap"><span>UCA 03</span>Under the lights</span></a>
+          <a class="frame f-wide" href="assets/photos/ground-night.jpg"><img src="assets/photos/ground-night.jpg" alt="Aerial view of the floodlit Precinct 12 ground at night" loading="lazy"><span class="cap"><span>UCA 04</span>Precinct 12, after dark</span></a>
+          <a class="frame f-tall" href="assets/photos/bowling-practice.jpg"><img src="assets/photos/bowling-practice.jpg" alt="Bowling practice on the net pitch" loading="lazy"><span class="cap"><span>UCA 05</span>Line and length</span></a>
+          <a class="frame f-sq" href="assets/photos/coach-with-players.jpg"><img src="assets/photos/coach-with-players.jpg" alt="Coach with a group of junior players" loading="lazy"><span class="cap"><span>UCA 06</span>Juniors</span></a>
+          <a class="frame f-tall" href="assets/photos/young-players.jpg"><img src="assets/photos/young-players.jpg" alt="Two young players shaking hands on the pitch" loading="lazy"><span class="cap"><span>UCA 07</span>Good game</span></a>
+          <a class="frame f-tall" href="assets/photos/young-players-2.jpg"><img src="assets/photos/young-players-2.jpg" alt="Coach handing a ball to a junior player at evening practice" loading="lazy"><span class="cap"><span>UCA 08</span>Your turn</span></a>
+        </div>
+        <div class="reel-bar" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT SHEET: team photos ============ -->
+    <section class="sheet-wall" id="photos">
+      <div class="sec-head">
+        <p class="label">Contact sheet</p>
+        <h2 class="h2">Match days. <i>Team days.</i></h2>
+      </div>
+      <div class="wall" id="wall">
+          <a class="shot" href="assets/photos/academy-01.jpg"><img src="assets/photos/academy-01.jpg" alt="Junior players in orange kit sitting on the pavilion steps" width="1400" height="788" loading="lazy"><span class="shot-no">UCA 09</span></a>
+          <a class="shot" href="assets/photos/academy-02.jpg"><img src="assets/photos/academy-02.jpg" alt="Young batter in a red helmet playing a shot" width="1128" height="706" loading="lazy"><span class="shot-no">UCA 10</span></a>
+          <a class="shot" href="assets/photos/academy-03.jpg"><img src="assets/photos/academy-03.jpg" alt="Junior player holding a trophy on the ground" width="787" height="1400" loading="lazy"><span class="shot-no">UCA 11</span></a>
+          <a class="shot" href="assets/photos/academy-04.jpg"><img src="assets/photos/academy-04.jpg" alt="Junior batter in orange kit, padded up" width="654" height="1400" loading="lazy"><span class="shot-no">UCA 12</span></a>
+          <a class="shot" href="assets/photos/academy-05.jpg"><img src="assets/photos/academy-05.jpg" alt="Coach presenting an award to a junior player" width="720" height="1280" loading="lazy"><span class="shot-no">UCA 13</span></a>
+          <a class="shot" href="assets/photos/academy-06.jpg"><img src="assets/photos/academy-06.jpg" alt="Squad in white kit and orange caps with their coaches" width="1280" height="720" loading="lazy"><span class="shot-no">UCA 14</span></a>
+          <a class="shot" href="assets/photos/academy-07.jpg"><img src="assets/photos/academy-07.jpg" alt="Academy squad lined up in front of the pavilion" width="960" height="1280" loading="lazy"><span class="shot-no">UCA 15</span></a>
+          <a class="shot" href="assets/photos/academy-08.jpg"><img src="assets/photos/academy-08.jpg" alt="Junior squad sitting on the pavilion steps" width="1280" height="960" loading="lazy"><span class="shot-no">UCA 16</span></a>
+          <a class="shot" href="assets/photos/academy-09.jpg"><img src="assets/photos/academy-09.jpg" alt="Junior squad sitting on the pavilion steps, smiling" width="1280" height="960" loading="lazy"><span class="shot-no">UCA 17</span></a>
+          <a class="shot" href="assets/photos/academy-10.jpg"><img src="assets/photos/academy-10.jpg" alt="The whole academy lined up on the outfield" width="1280" height="720" loading="lazy"><span class="shot-no">UCA 18</span></a>
+          <a class="shot" href="assets/photos/academy-11.jpg"><img src="assets/photos/academy-11.jpg" alt="Players, coaches and parents lined up on the ground" width="1280" height="720" loading="lazy"><span class="shot-no">UCA 19</span></a>
+          <a class="shot" href="assets/photos/academy-12.jpg"><img src="assets/photos/academy-12.jpg" alt="Squad in orange kit, front row kneeling" width="1280" height="960" loading="lazy"><span class="shot-no">UCA 20</span></a>
+          <a class="shot" href="assets/photos/academy-13.jpg"><img src="assets/photos/academy-13.jpg" alt="Squad in orange kit on the outfield with palm trees behind" width="1280" height="960" loading="lazy"><span class="shot-no">UCA 21</span></a>
+          <a class="shot" href="assets/photos/academy-14.jpg"><img src="assets/photos/academy-14.jpg" alt="Batter in white kit driving the ball" width="1222" height="732" loading="lazy"><span class="shot-no">UCA 22</span></a>
+          <a class="shot" href="assets/photos/academy-15.jpg"><img src="assets/photos/academy-15.jpg" alt="Bowler running in with the umpire watching" width="1128" height="706" loading="lazy"><span class="shot-no">UCA 23</span></a>
+          <a class="shot" href="assets/photos/academy-16.jpg"><img src="assets/photos/academy-16.jpg" alt="Batter in orange kit at the crease" width="1280" height="960" loading="lazy"><span class="shot-no">UCA 24</span></a>
+          <a class="shot" href="assets/photos/academy-17.jpg"><img src="assets/photos/academy-17.jpg" alt="Squad in white kit and orange caps, front row kneeling" width="1280" height="720" loading="lazy"><span class="shot-no">UCA 25</span></a>
+          <a class="shot" href="assets/photos/academy-18.jpg"><img src="assets/photos/academy-18.jpg" alt="Bowler in white kit delivering the ball" width="1128" height="706" loading="lazy"><span class="shot-no">UCA 26</span></a>
+      </div>
+      <button class="wall-more" type="button" aria-controls="wall" aria-expanded="false">Show all photos &darr;</button>
+    </section>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+      <img src="" alt="">
+      <button class="lb-close" type="button" aria-label="Close">Close &times;</button>
+    </dialog>
+
+    <!-- ============ COACHES (placeholder) ============ -->
+    <!-- Hidden for now: remove the "hidden" attribute (and renumber the labels below) to show it again -->
+    <section class="coaches" id="coaches" hidden>
+      <div class="sec-head">
+        <p class="label">(07) Coaches</p>
+        <h2 class="h2">The people <i>in the nets.</i></h2>
+      </div>
+      <div class="polaroids">
+        <figure class="polaroid"><div class="ph">Photo</div><figcaption>Coach Name<small>Head coach</small></figcaption></figure>
+        <figure class="polaroid"><div class="ph">Photo</div><figcaption>Coach Name<small>Batting</small></figcaption></figure>
+        <figure class="polaroid"><div class="ph">Photo</div><figcaption>Coach Name<small>Bowling</small></figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ============ PARTNER ============ -->
+    <section class="partner">
+      <p class="label">Partner &amp; sponsor</p>
+      <div class="partner-row">
+        <img src="assets/img/partner-btl.png" alt="Bahria Town Locals" width="262" height="311" loading="lazy">
+        <p class="partner-txt">Backed by <i>Bahria Town Locals.</i></p>
+      </div>
+    </section>
+
+    <!-- ============ REGISTER: team sheet ============ -->
+    <section class="register" id="register">
+      <div class="sec-head">
+        <p class="label">(07) Register</p>
+        <h2 class="h2">Put your name <i>on the team sheet.</i></h2>
+        <p class="sub">Registration is Rs. 2,000, paid once, then Rs. 8,000 a month. You can pay online with the <a href="#pay">QR code</a>.</p>
+      </div>
+      <form class="sheet" id="reg-form" action="register.php" method="post" novalidate>
+        <div class="sheet-head"><span>Team sheet</span><span>UCA / <span id="sheet-date"></span></span></div>
+        <label class="line"><span class="ln">01</span><span class="lt">Player name</span><input name="name" type="text" required maxlength="100" autocomplete="name"></label>
+        <label class="line"><span class="ln">02</span><span class="lt">Age</span><input name="age" type="number" min="4" max="60" required inputmode="numeric"></label>
+        <label class="line"><span class="ln">03</span><span class="lt">Phone / WhatsApp</span><input name="phone" type="tel" required maxlength="20" placeholder="03XX XXXXXXX" autocomplete="tel"></label>
+        <label class="line"><span class="ln">04</span><span class="lt">Guardian <em>(under 18)</em></span><input name="guardian" type="text" maxlength="100"></label>
+        <label class="line"><span class="ln">05</span><span class="lt">Email <em>(optional)</em></span><input name="email" type="email" maxlength="120" autocomplete="email"></label>
+        <div class="line batches-pick" role="radiogroup" aria-labelledby="batch-lbl">
+          <span class="ln">06</span><span class="lt" id="batch-lbl">Batch</span>
+          <div class="chips">
+            <label><input type="radio" name="batch" value="Precinct 2 - All ages" required><span>P2 &middot; All ages</span></label>
+            <label><input type="radio" name="batch" value="Diamond - Precinct 12 (Under 14)"><span>Diamond &middot; Under 14</span></label>
+            <label><input type="radio" name="batch" value="Platinum - Precinct 12 (14+)"><span>Platinum &middot; 14+</span></label>
+          </div>
+        </div>
+        <label class="line"><span class="ln">07</span><span class="lt">Notes <em>(optional)</em></span><input name="message" type="text" maxlength="1000"></label>
+        <div class="hp" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <div class="sheet-foot">
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <button class="btn-lime" type="submit">Sign the sheet &#8599;</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="contact-grid">
+        <div>
+          <p class="label">(08) Find us</p>
+          <p class="addr">Plot 282, Liberty Commercial,<br>Precinct 4, Bahria Town, Karachi.</p>
+          <p class="grounds">Training at Precinct 2 (Sports Complex, Dolphin) &amp; Precinct 12.</p>
+        </div>
+        <div class="contact-links">
+          <a href="tel:+923009382539">+92 300 938 2539</a>
+          <a href="tel:+923312228992">+92 331 222 8992</a>
+          <a href="https://wa.me/923009382539" target="_blank" rel="noopener">WhatsApp &#8599;</a>
+          <a href="mailto:usmanicricketacademy@gmail.com">usmanicricketacademy@gmail.com</a>
+          <!-- PLACEHOLDER social links -->
+          <span class="socials"><a href="#">Instagram</a> <a href="#">Facebook</a> <a href="#">YouTube</a></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot" id="foot">
+    <div class="foot-giant" aria-hidden="true">
+      <span class="g-outline">HOWZAT</span>
+      <span class="g-fill">HOWZAT</span>
+    </div>
+    <div class="foot-row">
+      <span>&copy; <span id="year">2026</span> Usmani Cricket Academy</span>
+      <span>Bahria Town, Karachi</span>
+      <a href="#top">Back to the crease &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/stadium.js"></script>
+</body>
+</html>

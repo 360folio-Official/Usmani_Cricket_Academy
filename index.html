@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UCA Website Designs</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="public_html/assets/img/favicon-32.png">
+  <style>
+    :root { --bg: #0b0b0b; --card: #161616; --text: #fff; --muted: rgba(255,255,255,.6); --line: rgba(255,255,255,.12); }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text); font: 17px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; display: grid; place-items: center; padding: 40px 16px; }
+    main { width: min(920px, 100%); }
+    header { display: flex; align-items: center; gap: 14px; margin-bottom: 32px; }
+    header img { width: 48px; height: auto; }
+    h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); margin: 0; line-height: 1.1; }
+    p.intro { color: var(--muted); margin: 0 0 28px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    a.card { display: block; text-decoration: none; color: inherit; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 26px; transition: transform .2s, border-color .2s; }
+    a.card:hover { transform: translateY(-3px); border-color: var(--accent); }
+    .tag { display: inline-block; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #000; background: var(--accent); padding: 4px 10px; border-radius: 99px; }
+    .card h2 { margin: 14px 0 6px; font-size: 1.5rem; }
+    .card p { margin: 0 0 18px; color: var(--muted); }
+    .go { font-weight: 700; color: var(--accent); }
+    .v1 { --accent: #ff4a2a; }
+    .v2 { --accent: #d7ff3a; }
+    footer { margin-top: 28px; color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="public_html/assets/img/mark-white.png" alt="">
+      <h1>Usmani Cricket Academy<br>website designs</h1>
+    </header>
+    <p class="intro">Two design options. Open each one, scroll all the way through, and try it on your phone too.</p>
+    <div class="grid">
+      <a class="card v1" href="public_html/">
+        <span class="tag">Version 1</span>
+        <h2>Academy brand</h2>
+        <p>Red, orange and black from the academy flyer, with a 3D cricket ball in the opening section.</p>
+        <span class="go">Open version 1 &rarr;</span>
+      </a>
+      <a class="card v2" href="public_html_v2/">
+        <span class="tag">Version 2</span>
+        <h2>Under the Lights</h2>
+        <p>A night-match look. Scroll through a 3D floodlit stadium as the ball is bowled and hits the stumps.</p>
+        <span class="go">Open version 2 &rarr;</span>
+      </a>
+    </div>
+    <footer>Note: the registration form only sends once the site is on the real server. On this preview it shows an error, which is expected.</footer>
+  </main>
+</body>
+</html>
